@@ -1,277 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uso Sustentável da Água: Uma Abordagem Multidisciplinar</title>
-    <link rel="stylesheet" href="estilo.css">.
-    <style>
-        :root {
-            --primary-color: #2a6f97;
-            --secondary-color: #014f86;
-            --accent-color: #a9d6e5;
-            --text-color: #2b2d42;
-            --bg-color: #f8f9fa;
-            --card-bg: #ffffff;
-        }
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Uso Sustentável da Água</title>
+   <style>
+       :root {
+           --primary-color: #0077b6;
+           --secondary-color: #00b4d8;
+           --light-bg: #f4f9fc;
+           --text-color: #2b2d42;
+       }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
+       body {
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           line-height: 1.6;
+           color: var(--text-color);
+           background-color: var(--light-bg);
+           margin: 0;
+           padding: 0;
+       }
 
-        header {
-            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-            color: white;
-            padding: 3rem 1rem;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
+       header {
+           background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+           color: white;
+           text-align: center;
+           padding: 3rem 1rem;
+       }
 
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
 
-        nav {
-            background-color: #fff;
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            z-index: 100;
-            text-align: center;
-        }
+       header h1 {
+           margin: 0;
+           font-size: 2.5rem;
+       }
 
-        nav a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 15px;
-            transition: color 0.3s;
-        }
 
-        nav a:hover {
-            color: var(--secondary-color);
-        }
+       header p {
+           font-size: 1.2rem;
+           opacity: 0.9;
+       }
 
-        main {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
 
-        .intro {
-            background-color: var(--card-bg);
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            margin-bottom: 2rem;
-            border-left: 5px solid var(--primary-color);
-        }
+       nav {
+           background-color: #023e8a;
+           display: flex;
+           justify-content: center;
+           padding: 0.8rem;
+           position: sticky;}
 
-        .grid-sections {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        section {
-            background-color: var(--card-bg);
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-        }
-
-        section:hover {
-            transform: translateY(-5px);
-        }
-
-        h2 {
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        ul {
-            list-style-type: square;
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        .highlight-box {
-            background-color: #e3f2fd;
-            padding: 1rem;
-            border-radius: 6px;
-            margin-top: 1rem;
-            font-style: italic;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1rem 0;
-        }
-
-        th, td {
-            padding: 0.75rem;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background-color: var(--primary-color);
-            color: white;
-        }
-
-        footer {
-            background-color: var(--secondary-color);
-            color: white;
-            text-align: center;
-            padding: 1.5rem;
-            margin-top: 3rem;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 600px) {
-            header h1 { font-size: 2rem; }
-            nav a { display: block; margin: 10px 0; }
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>Uso Sustentável da Água</h1>
-        <p>Uma visão integrada através da Biologia, Química e Matemática</p>
-    </header>
-
-    <nav>
-        <a href="#biologia">Biologia</a>
-        <a href="#quimica">Química</a>
-        <a href="#matematica">Matemática</a>
-        <a href="#conclusao">Ações Práticas</a>
-    </nav>
-
-    <main>
-        <div class="intro">
-            <h2>A Importância do Manejo Consciente</h2>
-            <p>A água é o recurso mais precioso do nosso planeta. Embora a Terra seja coberta por 70% de água, apenas uma fração minúscula está disponível e própria para o consumo humano. Compreender a água através de diferentes ciências nos ajuda a entender a urgência de sua preservação.</p>
-        </div>
-
-        <div class="grid-sections">
-            <!-- SEÇÃO BIOLOGIA -->
-            <section id="biologia">
-                <h2>🧬 Biologia e a Vida</h2>
-                <p>A água é o solvente universal que viabiliza a vida. Nas ciências biológicas, ela é estudada como o meio onde ocorrem as reações metabólicas e como o principal componente dos seres vivos.</p>
-                <br>
-                <ul>
-                    <li><strong>Regulação Térmica:</strong> Graças ao seu alto calor específico, a água impede variações bruscas de temperatura nos organismos e nos ecossistemas.</li>
-                    <li><strong>Biodiversidade Aquática:</strong> Rios, lagos e oceanos abrigam a maior parte da biomassa do planeta. A poluição destrói cadeias alimentares inteiras.</li>
-                    <li><strong>Ciclo Biológico:</strong> A transpiração das plantas (evapotranspiração) é vital para a formação de chuvas e manutenção do clima global.</li>
-                </ul>
-                <div class="highlight-box">
-                    <strong>Fato Biológico:</strong> O corpo humano de um adulto é composto por cerca de 60% a 65% de água. Sem ela, nossas células colapsam em poucos dias.
-                </div>
-            </section>
-
-            <!-- SEÇÃO QUÍMICA -->
-            <section id="quimica">
-                <h2>🧪 Química e Qualidade</h2>
-                <p>A estrutura molecular da água (H₂O) confere a ela propriedades únicas, como a polaridade e as ligações de hidrogênio, fundamentais para a sua interação com o meio ambiente.</p>
-                <br>
-                <ul>
-                    <li><strong>Solubilidade e Poluição:</strong> Por ser polar, a água dissolve facilmente poluentes químicos, pesticidas e metais pesados, tornando o tratamento um desafio constante.</li>
-                    <li><strong>Indicadores de Qualidade:</strong>
-                        <ul>
-                            <li><strong>pH:</strong> Água potável deve ter pH entre 6,0 e 9,5.</li>
-                            <li><strong>Oxigênio Dissolvido (OD):</strong> Essencial para a vida aquática; níveis baixos indicam poluição por matéria orgânica.</li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="highlight-box">
-                    <strong>Desafio Químico:</strong> O processo de dessalinização da água do mar exige alta tecnologia e energia para separar os íons de sódio (Na⁺) e cloro (Cl⁻) das moléculas de H₂O.
-                </div>
-            </section>
-        </div>
-
-        <!-- SEÇÃO MATEMÁTICA -->
-        <section id="matematica" style="margin-top: 2rem;">
-            <h2>📊 Matemática e Consumo: Os Números da Água</h2>
-            <p>A matemática nos ajuda a quantificar o desperdício, projetar a escassez e entender a nossa "pegada hídrica" — o volume total de água doce utilizado para produzir os bens e serviços consumidos.</p>
-            
-            <table>
-                <thead>
-                    <tr>
-                        <th>Produto / Atividade</th>
-                        <th>Consumo Médio de Água</th>
-                        <th>Impacto Matemático</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1 kg de carne bovina</td>
-                        <td>~ 15.000 litros</td>
-                        <td>Equivale a cerca de 100 banhos de 15 minutos.</td>
-                    </tr>
-                    <tr>
-                        <td>Banho de 15 minutos</td>
-                        <td>~ 135 litros</td>
-                        <td>Reduzir para 5 min economiza 90 litros (66% de redução).</td>
-                    </tr>
-                    <tr>
-                        <td>Torneira gotejando (1 dia)</td>
-                        <td>~ 40 litros</td>
-                        <td>Em um ano, são 14.600 litros desperdiçados por uma única torneira.</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <p><strong>A Equação do Desperdício:</strong> Se uma escola com 500 alunos tiver 5 torneiras estragadas gotejando durante o ano letivo (200 dias), o desperdício total será de:</p>
-            <div class="highlight-box" style="text-align: center; font-size: 1.2rem; font-style: normal;">
-                <strong>5 torneiras × 40 litros/dia × 200 dias = 40.000 litros de água limpa jogados fora!</strong>
-            </div>
-        </section>
-
-        <!-- SEÇÃO CONCLUSÃO / AÇÕES -->
-        <section id="conclusao" style="margin-top: 2rem; background-color: #e8f5e9; border-left: 5px solid #2e7d32;">
-            <h2 style="color: #2e7d32; border-bottom-color: #c8e6c9;">🌱 Como você pode ajudar?</h2>
-            <p>A mudança de hábitos baseada em evidências científicas é a resposta para a crise hídrica mundial. Adote pequenos passos na sua rotina:</p>
-            <br>
-            <ol style="margin-left: 1.5rem; margin-bottom: 1rem;">
-                <li><strong>Capte água da chuva:</strong> Use para lavar o quintal e regar plantas (Biologia/Matemática).</li>
-                <li><strong>Evite produtos químicos poluentes:</strong> Prefira sabões biodegradáveis para não contaminar os lençóis freáticos (Química).</li>
-                <li><strong>Monitore seu hidrômetro:</strong> Use a matemática para acompanhar o consumo mensal da sua casa e detectar vazamentos silenciosos.</li>
-            </ol>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 - Projeto Educacional de Uso Sustentável da Água. Desenvolvido para fins didáticos.</p>
-    </footer>
-
-</body>
-</html>
